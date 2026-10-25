@@ -1,108 +1,64 @@
-# 🖥  MQ2 | Scripts | BuffBot
+# BuffBot — MacroQuest Lua Buff Bot
 
-[BuffBot](https://github.com/TheDroidYourLookingFor/MacroQuest2-Scripts/tree/main/BuffBot)
-Hello Everyone! This is a Lua script I converted from my old Guild Buff Assistant macro. The old macro is still available if you prefer it. However this version is much easier to configure as everything is done via a GUI instead of editing INI files. You can however still edit the ini files if you prefer. The Lua script can run on a Shaman, Magician, Enchanter, Ranger, Druid, Wizard, Beastlord, Cleric, or Paladin. You can even have a Necromancer or Shadowknight summon corpses!
+A MacroQuest Lua script that automatically casts level-appropriate buffs when hailed. Configured entirely through an in-game GUI — no INI editing required (though INI files are still supported).
 
-Please let me know if I've made any errors in the conversion. :) This is my first time writing Lua so bound to be a few minor issues.
-Conversion From Macro Status
-Finished:
-✓ Beastlord - Fully converted
-- Spells imported from ZAM for consistency
+## Supported Classes
 
-✓ Cleric - Fully converted
-- Spells imported from ZAM for consistency
+| Class | Buffs | Special |
+|---|---|---|
+| Beastlord | HP, Attack, Mana | |
+| Cleric | HP, Guard, Symbol, Haste | Rez on "rez"; Unity/combo spells (85+) |
+| Druid | HP, Regen, DS, SoW | Ports (Zephyr) |
+| Enchanter | Haste, Clarity | |
+| Magician | DS, Grant items, Mod rods | Summons on keywords (see Commands) |
+| Necromancer | Dead Man Floating | Corpse summon on "summon" |
+| Paladin | HP | |
+| Ranger | HP, DS, AC, Attack, SoW | |
+| Shadow Knight | — | Corpse summon on "summon" |
+| Shaman | HP, Regen, Proc, Haste, SoW | Talisman/Unity combo spells (all ranges) |
+| Wizard | — | Ports (Translocate) |
 
-✓ Druid - Fully converted
-- Spells imported from ZAM for consistency
+## Features
 
-✓ Enchanter - Fully converted
-- Spells imported from ZAM for consistency
+- Casts level-appropriate buffs for level ranges: 1–45, 46–60, 61–70, 71–84, 85+
+- **Combo spell support** — Shaman and Cleric can use single Unity/Unified Hand spells that cover multiple buff effects in one cast, with a per-range checkbox in the GUI
+- Spell rank auto-resolution — automatically uses Rk. III > Rk. II > base when memming and casting
+- Spell book validation on REBUILD — warns about any selected spells not in your spell book
+- Per-character INI settings with automatic migration when version changes
+- Account/balance system — charge players per buff, track balances, stop buffing if they can't pay
+- Advertising mode — announces available commands when enabled
+- Ports list built from your spell book automatically (Druid/Wizard)
 
-✓ Necromancer- Fully converted
-- Spells imported from ZAM for consistency
+## Commands (say or tell the bot)
 
-✓ Paladin- Fully converted
-- Spells imported from ZAM for consistency
+| Who hears it | Command | Action |
+|---|---|---|
+| All | `hail` | Level-appropriate buffs |
+| Druid / Wizard | `ports` | Port to a destination |
+| Magician | `toys` | Summon pet toys |
+| Magician | `toys N` (1–20) | Summon N pet toys |
+| Magician | `invis` | Summon invis stone |
+| Magician | `arrows` | Summon quiver/arrows |
+| Magician | `rod` | Summon mod rod |
+| Magician | `drod` | Summon damage rod |
+| Magician | `other` | Summon invis stone, lev ring, mod rod, damage rod |
+| Cleric | `rez` | Resurrect |
+| Necromancer / Shadow Knight | `summon` | Summon corpse |
 
-✓ Ranger - Fully converted
-- Spells imported from ZAM for consistency
+## Installation
 
-✓ Shaman - Fully converted
-- Spells imported from ZAM for consistency
+1. Copy the `BuffBot` folder to your MacroQuest `lua` directory.
+2. In-game: `/lua run BuffBot`
+3. Configure spells and options in the GUI that opens.
 
-✓ Shadowknight- Fully converted
-- Spells imported from ZAM for consistency
+Settings are saved per character to `config\BuffBot\Settings\BuffBot_<Name>_<Class>.ini`.
 
-✓ Wizard - Fully converted
-- Ports imported from users spellbook for consistency
+## Contributing
 
-In Progress:
-✖ Magician - In Progress
+Fork the repo and submit pull requests. Open an issue for bugs, spell list corrections, or feature requests.
 
-Features:
-- Buffs level appropriate buffs when Hailed.
-- Setup to use languages for FV.
-- Mage: Summons Pet toys when it hears "toys"
-- Mage: Summons Between 1- 20 Pet toys when it hears "toys 1-20"
-- Mage: Summons Invis stone when it hears "invis"
-- Mage: Summons mod rod when it hears "rod"
-- Mage: Summons damage rod when it hears "drod"
-- Mage: Summons arrows/quiver when it hears "arrows"
-- Mage: Summons Invis stone, Lev Ring, Mod Rod, and Damage Rod when it hears "other"
-- Cleric: Will resurrect a player when it hears "rez"
-- Necromancer: Will summon a player when it hears "summon"
-- Druid: Ports to all available druid Zephyrs.
-- Wizard: Ports to all available wizard Translocates.
-- Automatically builds ports list from Wizard/Druids spell book
-- Account balances! Charge people for your buffs and stop buffing them if they can't afford it.
-- Will deduct a set amount each time it buffs a pet, merc, or the initiator.
-- Will deduct a set amount each time it summons on the mage.
-- Moved everything you need to change into a nice GUI.
-- Advertises the commands available when enabled!
+## Links
 
-Available Commands:
-- All
--- Hail for level appropriate buffs.
-- Druid
--- ports
-- Wizard
--- ports
-- Mage
--- toys
--- toys x(1-20)
--- invis
--- arrows
--- rod
--- drod
--- other
-- Cleric
--- rez
-- Necromancer
--- summon
-- Shadow knight
--- summon
-
-## Other Resources and Links
-
-* [MacroQuest2](https://www.macroquest2.com/main.php)
-* [RedGuides](https://www.redguides.com/community/)
-
-### Documentation and Guides
-
-* [MacroQuest2 Lua Documentation and Syntax](https://docs.macroquest.org/lua/)
-* [RedGuides Lua Documentation and Syntax](https://www.redguides.com/wiki/MQ2Lua)
-* 
-### MacroQuest Communities
-
-* [MacroQuest2 Discord](https://www.macroquest2.com/main.php?p=discord)
-* [RedGuides Discord](https://www.redguides.com/community/rg-discord/)
-
-## Credits and Notes
-
- Everything written here is by me. Feel free to use but please give me credit if you do.
-
-### Contributing
-
-Fork and submit Pull Requests for additions. Create Issues
-for questions, feedback, or help.
-
+- [MacroQuest Lua Documentation](https://docs.macroquest.org/lua/)
+- [RedGuides](https://www.redguides.com/community/)
+- [RedGuides Discord](https://www.redguides.com/community/rg-discord/)
