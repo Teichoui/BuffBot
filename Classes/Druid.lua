@@ -4,7 +4,7 @@ local mq = require('mq')
 local imgui = require 'ImGui'
 
 local druid = {}
-druid.version = '1.0.0'
+druid.version = '1.0.1'
 
 druid.allPorts = {
     'Zephyr: Ruined Relic',
@@ -108,6 +108,7 @@ druid.hp_Buffs = {
     'Skin like Wood'
 }
 druid.regen_Buffs = {
+    'Talisman of Perseverance XV',
     'Talisman of the Unforgettable',
     'Spirit of the Unforgettable',
     'Talisman of the Tenacious',
@@ -121,7 +122,7 @@ druid.regen_Buffs = {
     'Talisman of the Steadfast',
     'Spirit of the Steadfast',
     'Talisman of the Indomitable',
-    'Spiri of the Indomitable',
+    'Spirit of the Indomitable',
     'Talisman of the Relentless',
     'Spirit of the Relentless',
     'Talisman of the Resolute',
@@ -141,6 +142,7 @@ druid.regen_Buffs = {
     'Regeneration'
 }
 druid.big_ds_Buffs = {
+    'Barkspur XIII',
     'Frondbarb',
     'Barkspur',
     'Fernspur',
@@ -154,6 +156,7 @@ druid.big_ds_Buffs = {
     'Duskthorn'
 }
 druid.ds_Buffs = {
+    'Legacy of Brackenbriars',
     'Legacy of Bramblespikes',
     'Bramblespike Bulwark',
     'Legacy of Bloodspikes',

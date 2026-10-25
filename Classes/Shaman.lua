@@ -6,6 +6,7 @@ local shaman = {}
 shaman.version = '1.1.0'
 
 shaman.haste_Buffs = {
+    'Celeritous Unity',
     'Talisman of Celerity',
     'Symbol of Celerity',
     'Swift Like the Wind',
@@ -14,7 +15,12 @@ shaman.haste_Buffs = {
     'Quickness'
 }
 shaman.hp_Buffs = {
+    'Celeritous Unity',
+    'Spirit of Fortitude',
     'Spirit\'s Focusing XIV',
+    'Spirit of Lost Legends',
+    'Preeminent Unity',
+    'Mammoth\'s Unity',
     'Talisman of Unity X',
     'Unity of the Heroic',
     'Talisman of the Heroic',

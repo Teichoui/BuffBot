@@ -4,7 +4,7 @@ local mq = require('mq')
 local imgui = require 'ImGui'
 
 local magician = {}
-magician.version = '1.0.0'
+magician.version = '1.0.1'
 
 magician.ds_Buffs = {
     'Circle of Fireskin XVI',
@@ -44,6 +44,7 @@ magician.ds_Buffs = {
     'Shield of Fire'
 }
 magician.big_ds_Buffs = {
+    'Iceflame Guard XII',
     'Boiling Skin',
     'Scorching Skin',
     'Burning Skin',
@@ -69,11 +70,13 @@ magician.surge_Buffs = {
     'Surge of Thaumacretion'
 }
 magician.visor = {
+    'Grant Visor of Usira',
     'Grant Visor of Shoen',
     'Grant Visor of Gobeker',
     'Grant Visor of Vabtik'
 }
 magician.weapon = {
+    'Grant Arcane Armaments',
     'Grant Goliath\'s Armaments',
     'Grant Shak Dathor\'s Armaments',
     'Grant Yalrek\'s Armaments',
@@ -84,6 +87,7 @@ magician.weapon = {
     'Grant Spectral Armaments'
 }
 magician.armor = {
+    'Grant Arcane Plate',
     'Grant the Alloy\'s Plate',
     'Grant the Centien\'s Plate',
     'Grant Ocoenydd\'s Plate',
@@ -94,6 +98,7 @@ magician.armor = {
     'Grant Spectral Plate'
 }
 magician.heirloom = {
+    'Grant Arcane Heirlooms',
     'Grant Ankexfen\'s Heirlooms',
     'Grant the Diabo\'s Heirlooms',
     'Grant Crystasia\'s Heirlooms',
@@ -104,6 +109,7 @@ magician.heirloom = {
     'Grant Enibik\'s Heirlooms'
 }
 magician.arrows = {
+    'Grant Quiver of Drenesh',
     'Grant Quiver of Kalkek'
 }
 magician.invis = {
@@ -112,9 +118,11 @@ magician.invis = {
     'Grant Sphere of Air'
 }
 magician.lev = {
+    'Grant Ring of Improved Levitation',
     'Grant Ring of Levitation'
 }
 magician.modrod = {
+    'Rod of Shattered Modulation',
     'Modulating Shard VIII',
     'Rod of Courageous Modulation',
     'Wand of Frozen Modulation',

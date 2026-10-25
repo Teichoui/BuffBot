@@ -4,7 +4,7 @@ local mq = require('mq')
 local imgui = require 'ImGui'
 
 local ranger = {}
-ranger.version = '1.0.0'
+ranger.version = '1.0.1'
 
 ranger.enrichment_Buffs = {
     "Fernstalker's Enrichment",
@@ -13,6 +13,7 @@ ranger.enrichment_Buffs = {
     "Copsestalker's Enrichment"
 }
 ranger.hp_Buffs = {
+    "Protection of Pal'Lomen",
     'Grovewood Coat',
     'Brackenbriar Coat',
     'Underbrush Coat',

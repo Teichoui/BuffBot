@@ -4,7 +4,7 @@ local mq = require('mq')
 local imgui = require 'ImGui'
 
 local paladin = {}
-paladin.version = '1.0.0'
+paladin.version = '1.0.1'
 
 local toon = mq.TLO.Me.Name() or ''
 local class = mq.TLO.Me.Class() or ''
@@ -20,6 +20,7 @@ paladin.rez_Spell = {
 }
 
 paladin.hp_Buffs = {
+    'Hand of Austerity XVII',
     'Hand of the Fernshade Keeper',
     'Fernshade Keeper',
     'Symbol of Thormir',

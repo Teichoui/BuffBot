@@ -4,7 +4,7 @@ local mq = require('mq')
 local imgui = require 'ImGui'
 
 local enchanter = {}
-enchanter.version = '1.0.0'
+enchanter.version = '1.0.1'
 
 enchanter.haste_Buffs = {
     'Hastening of Elluria',

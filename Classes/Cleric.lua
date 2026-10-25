@@ -7,6 +7,10 @@ local cleric = {}
 cleric.version = '1.1.0'
 
 cleric.rez_Spell = {
+    'Superior Reviviscence',
+    'Eminent Reviviscence',
+    'Greater Reviviscence',
+    'Larger Reviviscence',
     'Reviviscence',
     'Blessing of Resurrection',
     'Resurrection',
@@ -66,6 +70,9 @@ cleric.symbol_Buffs = {
 }
 
 cleric.hp_Buffs = {
+    'Mercenary\'s Hand of Commitment',
+    'Mercenary\'s Hand of Aegolism XV',
+    'Unified Aegolism XV',
     'Unified Hand of Aegolism XV',
     'Unified Hand of Infallibility',
     'Unified Commitment',
@@ -123,6 +130,7 @@ cleric.hp_Buffs = {
 }
 cleric.haste_Buffs = {
     'Benediction of Faith',
+    'Mercenary\'s Hand of Faith',
     'Hand of Devotion',
     'Hand of Devoutness',
     'Benediction of Devotion',
@@ -152,6 +160,9 @@ cleric.haste_Buffs = {
     'Blessing of Piety'
 }
 cleric.guard_Buffs = {
+    'Shining Rampart IX',
+    'Rallied Bulwark of Vie',
+    'Ward of Eminence',
     'Rallied Ward of Vie XVI',
     'Rallied Citadel of Vie',
     'Rallied Greater Aegis of Vie',

@@ -3,10 +3,10 @@ local mq = require('mq')
 ---@type ImGui
 local imgui = require 'ImGui'
 local beastloard = {}
-beastloard.version = '1.0.0'
+beastloard.version = '1.0.1'
 
 beastloard.hp_Buffs = {
-    'Focus of Aramna',
+    'Spiritual Vigor XV',
     'Focus of Skull Crusher',
     'Focus of Jaegir',
     'Focus of Tobart',
@@ -44,6 +44,7 @@ beastloard.mana_Buffs = {
     'Spiritual Light'
 }
 beastloard.attack_Buffs = {
+    'Feralist\'s Unity VII',
     'Wildfang\'s Unity',
     'Spiritual Valiancy',
     'Spiritual Vigor',

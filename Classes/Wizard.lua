@@ -4,7 +4,7 @@ local mq = require('mq')
 local imgui = require 'ImGui'
 
 local wizard = {}
-wizard.version = '1.0.0'
+wizard.version = '1.0.1'
 
 local toon = mq.TLO.Me.Name() or ''
 local class = mq.TLO.Me.Class() or ''
@@ -67,6 +67,8 @@ wizard.allPorts = {
     'Translocate: Blightfire Moors'
 }
 wizard.portsList = {
+    'Translocate: Theater of Eternity',
+    'Translocate: Laurion',
     'Translocate: Shadow Valley',
     'Translocate: Shadeweaver\'s Tangle',
     'Translocate: Cobalt Scar',
